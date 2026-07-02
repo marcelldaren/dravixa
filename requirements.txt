@@ -1,0 +1,27 @@
+# Dravixa main environment requirements
+# Install with: pip install -r requirements.txt
+# NOTE: Do NOT install torch here — use Jetson-specific build (see docs/SETUP.md)
+
+faster-whisper
+pyaudio
+sounddevice
+soundfile
+numpy
+opencv-python
+mediapipe
+edge-tts
+requests
+pyserial
+spotipy
+flask
+websockets
+PyQt5
+scipy
+onnxruntime-gpu
+huggingface_hub
+kokoro-onnx
+usb
+cachetools
+aiohttp
+python-dotenv
+geopy
