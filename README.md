@@ -212,7 +212,7 @@ Say any of these to activate Dravixa:
 |---|---|
 | English | "Hello Toyota", "Hey Toyota", "Hi Toyota" |
 | Indonesian | "Halo Toyota", "Hai Toyota" |
-| Japanese | "Toyota-san" |
+| Japanese | "Konnichiwa" |
 
 After activation, speak in any of the 3 languages — Dravixa auto-detects and responds in the same language.
 
@@ -246,7 +246,7 @@ python3 -c "import pyaudio; p=pyaudio.PyAudio(); [print(i, p.get_device_info_by_
 |---|---|
 | Marcell Darren Febriyan | AI Engineer — CV, LLM, STT/TTS, HMI, API |
 | Matthew Ricardo Gunawan | Flutter App, Firebase, Robot Face Design |
-| Mark Alexander Ierwanto | 3D Modeling, Dashboard UI, System Integration |
+| Mark Alexander Ierwanto | 3D Modeling|
 
 ---
 
