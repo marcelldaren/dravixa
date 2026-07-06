@@ -1,0 +1,3 @@
+"D:\p\smstr 8\toyota\esp\.espressif\v5.2.7\esp-idf\export.bat"
+cd D:\dev\10_FactoryProgram
+idf.py build

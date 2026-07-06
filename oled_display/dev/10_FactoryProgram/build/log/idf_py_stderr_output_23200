@@ -1,0 +1,87 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40056f50: [0;33mmemcpy[0m[0m in [0;32mROM[0m
+[0m--- 0x4200a97a: [0;33mapp_main[0m[0m at [0;32mD:/dev/10_FactoryProgram/main/example_qspi_with_ram.c[0m[0m:[1;31m283[0m
+[0m--- 0x40388843: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m50[0m
+[0m--- 0x4037610a: [0;33mpanic_abort[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m482[0m
+[0m--- 0x4038884d: [0;33mesp_system_abort[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m93[0m
+[0m--- 0x40390976: [0;33mabort[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/newlib/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x40388843: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m50[0m
+[0m--- 0x4200a97a: [0;33mapp_main[0m[0m at [0;32mD:/dev/10_FactoryProgram/main/example_qspi_with_ram.c[0m[0m:[1;31m283[0m
+[0m--- 0x42111c5f: [0;33mmain_task[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037608c: [0;33mesp_restart_noos[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m163[0m
+[0m--- 0x4200a97a: [0;33mapp_main[0m[0m at [0;32mD:/dev/10_FactoryProgram/main/example_qspi_with_ram.c[0m[0m:[1;31m283[0m
+[0m--- 0x40388843: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m50[0m
+[0m--- 0x4037610a: [0;33mpanic_abort[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m482[0m
+[0m--- 0x4038884d: [0;33mesp_system_abort[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m93[0m
+[0m--- 0x40390976: [0;33mabort[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/newlib/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x40388843: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m50[0m
+[0m--- 0x4200a97a: [0;33mapp_main[0m[0m at [0;32mD:/dev/10_FactoryProgram/main/example_qspi_with_ram.c[0m[0m:[1;31m283[0m
+[0m--- 0x42111c5f: [0;33mmain_task[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037608c: [0;33mesp_restart_noos[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m163[0m
+[0m--- 0x4200a97a: [0;33mapp_main[0m[0m at [0;32mD:/dev/10_FactoryProgram/main/example_qspi_with_ram.c[0m[0m:[1;31m283[0m
+[0m--- 0x40388843: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m50[0m
+[0m--- 0x4037610a: [0;33mpanic_abort[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m482[0m
+[0m--- 0x4038884d: [0;33mesp_system_abort[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m93[0m
+[0m--- 0x40390976: [0;33mabort[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/newlib/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x40388843: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m50[0m
+[0m--- 0x4200a97a: [0;33mapp_main[0m[0m at [0;32mD:/dev/10_FactoryProgram/main/example_qspi_with_ram.c[0m[0m:[1;31m283[0m
+[0m--- 0x42111c5f: [0;33mmain_task[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037608c: [0;33mesp_restart_noos[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m163[0m
+[0m--- 0x4200a97a: [0;33mapp_main[0m[0m at [0;32mD:/dev/10_FactoryProgram/main/example_qspi_with_ram.c[0m[0m:[1;31m283[0m
+[0m--- 0x40388843: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m50[0m
+[0m--- 0x4037610a: [0;33mpanic_abort[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m482[0m
+[0m--- 0x4038884d: [0;33mesp_system_abort[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m93[0m
+[0m--- 0x40390976: [0;33mabort[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/newlib/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x40388843: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m50[0m
+[0m--- 0x4200a97a: [0;33mapp_main[0m[0m at [0;32mD:/dev/10_FactoryProgram/main/example_qspi_with_ram.c[0m[0m:[1;31m283[0m
+[0m--- 0x42111c5f: [0;33mmain_task[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037608c: [0;33mesp_restart_noos[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m163[0m
+[0m--- 0x4200a97a: [0;33mapp_main[0m[0m at [0;32mD:/dev/10_FactoryProgram/main/example_qspi_with_ram.c[0m[0m:[1;31m283[0m
+[0m--- 0x40388843: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m50[0m
+[0m--- 0x4037610a: [0;33mpanic_abort[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m482[0m
+[0m--- 0x4038884d: [0;33mesp_system_abort[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m93[0m
+[0m--- 0x40390976: [0;33mabort[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/newlib/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x40388843: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m50[0m
+[0m--- 0x4200a97a: [0;33mapp_main[0m[0m at [0;32mD:/dev/10_FactoryProgram/main/example_qspi_with_ram.c[0m[0m:[1;31m283[0m
+[0m--- 0x42111c5f: [0;33mmain_task[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037608c: [0;33mesp_restart_noos[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m163[0m
+[0m--- 0x4200a97a: [0;33mapp_main[0m[0m at [0;32mD:/dev/10_FactoryProgram/main/example_qspi_with_ram.c[0m[0m:[1;31m283[0m
+[0m--- 0x40388843: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m50[0m
+[0m--- 0x4037610a: [0;33mpanic_abort[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m482[0m
+[0m--- 0x4038884d: [0;33mesp_system_abort[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m93[0m
+[0m--- 0x40390976: [0;33mabort[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/newlib/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x40388843: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m50[0m
+[0m--- 0x4200a97a: [0;33mapp_main[0m[0m at [0;32mD:/dev/10_FactoryProgram/main/example_qspi_with_ram.c[0m[0m:[1;31m283[0m
+[0m--- 0x42111c5f: [0;33mmain_task[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037608c: [0;33mesp_restart_noos[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m163[0m
+[0m--- 0x4200a97a: [0;33mapp_main[0m[0m at [0;32mD:/dev/10_FactoryProgram/main/example_qspi_with_ram.c[0m[0m:[1;31m283[0m
+[0m--- 0x40388843: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m50[0m
+[0m--- 0x4037610a: [0;33mpanic_abort[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m482[0m
+[0m--- 0x4038884d: [0;33mesp_system_abort[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m93[0m
+[0m--- 0x40390976: [0;33mabort[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/newlib/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x40388843: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m50[0m
+[0m--- 0x4200a97a: [0;33mapp_main[0m[0m at [0;32mD:/dev/10_FactoryProgram/main/example_qspi_with_ram.c[0m[0m:[1;31m283[0m
+[0m--- 0x42111c5f: [0;33mmain_task[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037608c: [0;33mesp_restart_noos[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m163[0m
+[0m--- 0x4200a97a: [0;33mapp_main[0m[0m at [0;32mD:/dev/10_FactoryProgram/main/example_qspi_with_ram.c[0m[0m:[1;31m283[0m
+[0m--- 0x40388843: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m50[0m
+[0m--- 0x4037610a: [0;33mpanic_abort[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m482[0m
+[0m--- 0x4038884d: [0;33mesp_system_abort[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m93[0m
+[0m--- 0x40390976: [0;33mabort[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/newlib/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x40388843: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m50[0m
+[0m--- 0x4200a97a: [0;33mapp_main[0m[0m at [0;32mD:/dev/10_FactoryProgram/main/example_qspi_with_ram.c[0m[0m:[1;31m283[0m
+[0m--- 0x42111c5f: [0;33mmain_task[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037608c: [0;33mesp_restart_noos[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m163[0m
+[0m--- 0x4200a97a: [0;33mapp_main[0m[0m at [0;32mD:/dev/10_FactoryProgram/main/example_qspi_with_ram.c[0m[0m:[1;31m283[0m
+[0m--- 0x40388843: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m50[0m
+[0m--- 0x4037610a: [0;33mpanic_abort[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m482[0m
+[0m--- 0x4038884d: [0;33mesp_system_abort[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m93[0m
+[0m--- 0x40390976: [0;33mabort[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/newlib/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x40388843: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m50[0m
+[0m--- 0x4200a97a: [0;33mapp_main[0m[0m at [0;32mD:/dev/10_FactoryProgram/main/example_qspi_with_ram.c[0m[0m:[1;31m283[0m
+[0m--- 0x42111c5f: [0;33mmain_task[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037608c: [0;33mesp_restart_noos[0m[0m at [0;32mD:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m163[0m
+[0m

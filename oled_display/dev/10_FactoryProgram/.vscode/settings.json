@@ -1,0 +1,34 @@
+{
+    "idf.adapterTargetName": "esp32s3",
+    "idf.portWin": "COM90",
+    "idf.flashType": "UART",
+    "files.associations": {
+        "esp_lcd_touch_ft5x06.h": "c",
+        "pcf85063.h": "c",
+        "qmi8658c.h": "c",
+        "sd_card.h": "c",
+        "lvgl.h": "c",
+        "i2c_bsp.h": "c",
+        "lv_demos.h": "c",
+        "gui_guider.h": "c",
+        "events_init.h": "c",
+        "esp_lcd_sh8601.h": "c",
+        "lv_assert.h": "c",
+        "lv_analogclock.h": "c",
+        "compare": "c",
+        "gpio_bsp.h": "c",
+        "esp_wifi_bsp.h": "c",
+        "ble_scan_bsp.h": "c",
+        "custom.h": "c",
+        "adc_bsp.h": "c",
+        "user_app.h": "c"
+    },
+    "idf.openOcdConfigs": [
+        "board/esp32s3-builtin.cfg"
+    ],
+    "C_Cpp.errorSquiggles": "disabled",
+    "idf.espIdfPathWin": "E:\\v5.1.4\\esp-idf",
+    "idf.toolsPathWin": "e:\\Espressif",
+    "idf.pythonInstallPath": "e:\\Espressif\\tools\\idf-python\\3.11.2\\python.exe",
+    "idf.currentSetup": "D:\\p\\smstr 8\\toyota\\esp\\.espressif\\v5.2.7\\esp-idf"
+}

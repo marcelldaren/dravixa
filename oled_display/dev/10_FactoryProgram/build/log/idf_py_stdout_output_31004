@@ -1,0 +1,587 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42009827
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3820,len:0x19fc
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xe8c
+load:0x403cc700,len:0x3154
+entry 0x403c9940
+[0;32mI (26) boot: ESP-IDF v5.2.7 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 14 2026 22:57:54[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot: efuse block revision: v1.3[0m
+[0;32mI (38) qio_mode: Enabling QIO for flash chip WinBond[0m
+[0;32mI (44) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (49) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (53) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (58) boot: Enabling RNG early entropy source...[0m
+[0;32mI (64) boot: Partition Table:[0m
+[0;32mI (67) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (74) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (82) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (89) boot:  2 factory          factory app      00 00 00010000 00900000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=3721ch (225820) map[0m
+[0;32mI (143) esp_image: segment 1: paddr=00047244 vaddr=3fca2300 size=053d4h ( 21460) load[0m
+[0;32mI (147) esp_image: segment 2: paddr=0004c620 vaddr=40374000 size=039f8h ( 14840) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=cbfd0h (835536) map[0m
+[0;32mI (281) esp_image: segment 4: paddr=0011bff8 vaddr=403779f8 size=1a83ch (108604) load[0m
+[0;32mI (314) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (315) boot: Disabling RNG early entropy source...[0m
+[0;32mI (326) cpu_start: Multicore app[0m
+[0;32mI (327) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (327) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (329) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (335) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (340) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (345) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (350) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (356) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (362) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (368) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (374) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (380) MSPI Timing: PSRAM timing tuning index: 11[0m
+[0;32mI (384) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (389) esp_psram: Speed: 80MHz[0m
+[0;32mI (448) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (463) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (711) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (719) cpu_start: Pro cpu start user code[0m
+[0;32mI (719) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (719) cpu_start: Application information:[0m
+[0;32mI (722) cpu_start: Project name:     example_qspi_with_ram[0m
+[0;32mI (728) cpu_start: App version:      1[0m
+[0;32mI (733) cpu_start: Compile time:     Jun 15 2026 04:08:41[0m
+[0;32mI (739) cpu_start: ELF file SHA256:  ba2e69c2c...[0m
+[0;32mI (744) cpu_start: ESP-IDF:          v5.2.7[0m
+[0;32mI (749) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (754) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (759) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (763) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (771) heap_init: At 3FCABDE0 len 0003D930 (246 KiB): RAM[0m
+[0;32mI (777) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (783) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (789) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (795) esp_psram: Adding pool of 7104K of PSRAM memory to heap allocator[0m
+[0;32mI (803) spi_flash: detected chip: winbond[0m
+[0;32mI (807) spi_flash: flash io: qio[0m
+[0;33mW (811) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (822) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (829) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (846) main_task: Started on CPU0[0m
+[0;32mI (850) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (859) main_task: Calling app_main()[0m
+[0;32mI (863) example: Initialize I2C bus[0m
+[0;32mI (867) example: Initialize SPI bus[0m
+[0;32mI (871) example: Install panel IO[0m
+[0;32mI (875) example: Install SH8601 panel driver[0m
+[0;32mI (880) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (890) sh8601: LCD panel create success, version: 1.0.0[0m
+[0;33mW (1056) sh8601: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (1166) sh8601: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1166) example: Initialize LVGL library[0m
+[0;32mI (1170) example: Register display driver to LVGL[0m
+[0;32mI (1177) example: Install LVGL tick timer[0m
+[0;32mI (1180) example: Starting LVGL task[0m
+[0;32mI (1371) pp: pp rom version: e7ae62f[0m
+[0;32mI (1371) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1373) wifi:wifi driver task: 3fcdbbfc, prio:23, stack:6656, core=0[0m
+[0;32mI (1379) wifi:wifi firmware version: ff41b26[0m
+[0;32mI (1380) wifi:wifi certification version: v7.0[0m
+[0;32mI (1384) wifi:config NVS flash: enabled[0m
+[0;32mI (1387) wifi:config nano formating: disabled[0m
+[0;32mI (1391) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1396) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1401) wifi:Init management short buffer num: 32[0m
+[0;32mI (1405) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1409) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1413) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1417) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1421) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1426) wifi_init: rx ba win: 6[0m
+[0;32mI (1429) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1433) wifi_init: udp mbox: 6[0m
+[0;32mI (1437) wifi_init: tcp mbox: 6[0m
+[0;32mI (1441) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1445) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1449) wifi_init: tcp mss: 1440[0m
+[0;32mI (1453) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1458) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1463) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (1500) wifi:mode : sta (30:ed:a0:ad:8b:e8)[0m
+[0;32mI (1500) wifi:enable tsf[0m
+[0;32mI (1501) robot_face: Connecting to matt ...[0m
+[0;32mI (1506) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (1507) wifi:state: init -> auth (b0)[0m
+[0;32mI (1520) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1536) wifi:state: assoc -> run (10)[0m
+[0;32mI (1700) wifi:connected with matt, aid = 2, channel 6, BW20, bssid = 12:32:b6:52:da:5d[0m
+[0;32mI (1700) wifi:security: WPA2-PSK, phy: bgn, rssi: -32, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (1706) wifi:pm start, type: 1[0m
+
+[0;32mI (1708) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1716) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (1725) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1732) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1772) wifi:<ba-add>idx:0 (ifx:0, 12:32:b6:52:da:5d), tid:0, ssn:4, winSize:64[0m
+[0;32mI (2739) esp_netif_handlers: sta ip: 10.20.159.221, mask: 255.255.255.0, gw: 10.20.159.78[0m
+[0;32mI (2739) robot_face: Got IP: 10.20.159.221[0m
+[0;32mI (2742) robot_face: WiFi connected[0m
+[0;32mI (2746) robot_face: [Heap] free=113783 largest=31744[0m
+[0;32mI (2753) main_task: Returned from app_main()[0m
+[0;31mE (9753) esp-tls: couldn't get hostname for :firestore.googleapis.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (9753) esp-tls: Failed to open new connection[0m
+[0;31mE (9758) transport_base: Failed to open a new connection[0m
+[0;31mE (9764) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (9769) robot_face: [HTTP] err=ESP_ERR_HTTP_CONNECT status=-1 body=0 bytes[0m
+[0;32mI (9777) robot_face: [Poll] no change / failed[0m
+[0;32mI (19782) robot_face: [Heap] free=118263 largest=31744[0m
+[0;32mI (20023) wifi:<ba-add>idx:1 (ifx:0, 12:32:b6:52:da:5d), tid:3, ssn:5, winSize:64[0m
+[0;32mI (20117) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (20973) robot_face: [HTTP] err=ESP_OK status=200 body=3398 bytes[0m
+[0;32mI (20976) robot_face: [Config] eye=1 brow=3 mouth=3 eyeC=B2EBF2 bgC=0D1B2A ts=2147483647[0m
+[0;32mI (21129) robot_face: [Poll] updated[0m
+[0;32mI (31129) robot_face: [Heap] free=116963 largest=31744[0m
+[0;32mI (31554) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (32488) robot_face: [HTTP] err=ESP_OK status=200 body=3398 bytes[0m
+[0;32mI (32490) robot_face: [Config] eye=1 brow=3 mouth=3 eyeC=B2EBF2 bgC=0D1B2A ts=2147483647[0m
+[0;32mI (32493) robot_face: [Poll] no change / failed[0m
+[0;32mI (42498) robot_face: [Heap] free=116751 largest=31744[0m
+[0;32mI (43019) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (43705) robot_face: [HTTP] err=ESP_OK status=200 body=3398 bytes[0m
+[0;32mI (43707) robot_face: [Config] eye=1 brow=3 mouth=3 eyeC=B2EBF2 bgC=0D1B2A ts=2147483647[0m
+[0;32mI (43710) robot_face: [Poll] no change / failed[0m
+[0;32mI (53714) robot_face: [Heap] free=116539 largest=31744[0m
+[0;32mI (54442) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (56430) robot_face: [HTTP] err=ESP_OK status=200 body=3398 bytes[0m
+[0;32mI (56433) robot_face: [Config] eye=1 brow=3 mouth=3 eyeC=B2EBF2 bgC=0D1B2A ts=2147483647[0m
+[0;32mI (56436) robot_face: [Poll] no change / failed[0m
+[0;32mI (66440) robot_face: [Heap] free=116327 largest=31744[0m
+[0;32mI (66989) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (67670) robot_face: [HTTP] err=ESP_OK status=200 body=3398 bytes[0m
+[0;32mI (67673) robot_face: [Config] eye=1 brow=3 mouth=3 eyeC=B2EBF2 bgC=0D1B2A ts=2147483647[0m
+[0;32mI (67676) robot_face: [Poll] no change / failed[0m
+[0;32mI (77680) robot_face: [Heap] free=116115 largest=31744[0m
+[0;31mE (92683) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (92683) esp-tls: Failed to open new connection[0m
+[0;31mE (92683) transport_base: Failed to open a new connection[0m
+[0;31mE (92688) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (92694) robot_face: [HTTP] err=ESP_ERR_HTTP_CONNECT status=-1 body=0 bytes[0m
+[0;32mI (92701) robot_face: [Poll] no change / failed[0m
+[0;32mI (836) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (853) main_task: Started on CPU0[0m
+[0;32mI (857) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (866) main_task: Calling app_main()[0m
+[0;32mI (870) example: Initialize I2C bus[0m
+[0;32mI (874) example: Initialize SPI bus[0m
+[0;32mI (878) example: Install panel IO[0m
+[0;32mI (882) example: Install SH8601 panel driver[0m
+[0;32mI (887) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (897) sh8601: LCD panel create success, version: 1.0.0[0m
+[0;33mW (1063) sh8601: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (1173) sh8601: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1173) example: Initialize LVGL library[0m
+[0;32mI (1177) example: Register display driver to LVGL[0m
+[0;32mI (1184) example: Install LVGL tick timer[0m
+[0;32mI (1187) example: Starting LVGL task[0m
+[0;32mI (1378) pp: pp rom version: e7ae62f[0m
+[0;32mI (1378) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1380) wifi:wifi driver task: 3fcdbbfc, prio:23, stack:6656, core=0[0m
+[0;32mI (1386) wifi:wifi firmware version: ff41b26[0m
+[0;32mI (1387) wifi:wifi certification version: v7.0[0m
+[0;32mI (1391) wifi:config NVS flash: enabled[0m
+[0;32mI (1394) wifi:config nano formating: disabled[0m
+[0;32mI (1398) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1404) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1408) wifi:Init management short buffer num: 32[0m
+[0;32mI (1412) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1416) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1420) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1424) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1428) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1433) wifi_init: rx ba win: 6[0m
+[0;32mI (1436) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1440) wifi_init: udp mbox: 6[0m
+[0;32mI (1444) wifi_init: tcp mbox: 6[0m
+[0;32mI (1448) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1452) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1456) wifi_init: tcp mss: 1440[0m
+[0;32mI (1460) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1465) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1470) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (1506) wifi:mode : sta (30:ed:a0:ad:8b:e8)[0m
+[0;32mI (1507) wifi:enable tsf[0m
+[0;32mI (1508) robot_face: Connecting to matt ...[0m
+[0;32mI (1542) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (1543) wifi:state: init -> auth (b0)[0m
+[0;32mI (1568) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1584) wifi:state: assoc -> run (10)[0m
+[0;32mI (1601) wifi:connected with matt, aid = 3, channel 6, BW20, bssid = 12:32:b6:52:da:5d[0m
+[0;32mI (1601) wifi:security: WPA2-PSK, phy: bgn, rssi: -20, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (1607) wifi:pm start, type: 1[0m
+
+[0;32mI (1609) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1617) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (1646) wifi:<ba-add>idx:0 (ifx:0, 12:32:b6:52:da:5d), tid:0, ssn:4, winSize:64[0m
+[0;32mI (1669) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1669) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (2626) esp_netif_handlers: sta ip: 10.20.159.221, mask: 255.255.255.0, gw: 10.20.159.78[0m
+[0;32mI (2626) robot_face: Got IP: 10.20.159.221[0m
+[0;32mI (2629) robot_face: WiFi connected[0m
+[0;32mI (2633) robot_face: [Heap] free=113783 largest=31744[0m
+[0;32mI (2640) main_task: Returned from app_main()[0m
+[0;32mI (387) MSPI Timing: PSRAM timing tuning index: 11[0m
+[0;32mI (392) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (396) esp_psram: Speed: 80MHz[0m
+[0;32mI (455) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (470) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (718) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (726) cpu_start: Pro cpu start user code[0m
+[0;32mI (726) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (727) cpu_start: Application information:[0m
+[0;32mI (729) cpu_start: Project name:     example_qspi_with_ram[0m
+[0;32mI (736) cpu_start: App version:      1[0m
+[0;32mI (740) cpu_start: Compile time:     Jun 15 2026 04:08:41[0m
+[0;32mI (746) cpu_start: ELF file SHA256:  ba2e69c2c...[0m
+[0;32mI (751) cpu_start: ESP-IDF:          v5.2.7[0m
+[0;32mI (756) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (761) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (766) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (771) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (778) heap_init: At 3FCABDE0 len 0003D930 (246 KiB): RAM[0m
+[0;32mI (784) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (790) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (796) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (802) esp_psram: Adding pool of 7104K of PSRAM memory to heap allocator[0m
+[0;32mI (810) spi_flash: detected chip: winbond[0m
+[0;32mI (815) spi_flash: flash io: qio[0m
+[0;33mW (819) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (829) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (836) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (853) main_task: Started on CPU0[0m
+[0;32mI (857) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (866) main_task: Calling app_main()[0m
+[0;32mI (870) example: Initialize I2C bus[0m
+[0;32mI (874) example: Initialize SPI bus[0m
+[0;32mI (878) example: Install panel IO[0m
+[0;32mI (882) example: Install SH8601 panel driver[0m
+[0;32mI (887) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (897) sh8601: LCD panel create success, version: 1.0.0[0m
+[0;33mW (1063) sh8601: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (1173) sh8601: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1173) example: Initialize LVGL library[0m
+[0;32mI (1177) example: Register display driver to LVGL[0m
+[0;32mI (1184) example: Install LVGL tick timer[0m
+[0;32mI (1187) example: Starting LVGL task[0m
+[0;32mI (1378) pp: pp rom version: e7ae62f[0m
+[0;32mI (1378) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1380) wifi:wifi driver task: 3fcdbbfc, prio:23, stack:6656, core=0[0m
+[0;32mI (1386) wifi:wifi firmware version: ff41b26[0m
+[0;32mI (1387) wifi:wifi certification version: v7.0[0m
+[0;32mI (1391) wifi:config NVS flash: enabled[0m
+[0;32mI (1394) wifi:config nano formating: disabled[0m
+[0;32mI (1398) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1403) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1408) wifi:Init management short buffer num: 32[0m
+[0;32mI (1412) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1416) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1420) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1424) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1428) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1433) wifi_init: rx ba win: 6[0m
+[0;32mI (1436) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1440) wifi_init: udp mbox: 6[0m
+[0;32mI (1444) wifi_init: tcp mbox: 6[0m
+[0;32mI (1448) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1452) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1456) wifi_init: tcp mss: 1440[0m
+[0;32mI (1460) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1465) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1470) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (1507) wifi:mode : sta (30:ed:a0:ad:8b:e8)[0m
+[0;32mI (1507) wifi:enable tsf[0m
+[0;32mI (1508) robot_face: Connecting to matt ...[0m
+[0;32mI (1513) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (1514) wifi:state: init -> auth (b0)[0m
+[0;32mI (1541) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1554) wifi:state: assoc -> run (10)[0m
+[0;32mI (1569) wifi:connected with matt, aid = 4, channel 6, BW20, bssid = 12:32:b6:52:da:5d[0m
+[0;32mI (1569) wifi:security: WPA2-PSK, phy: bgn, rssi: -22, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (1575) wifi:pm start, type: 1[0m
+
+[0;32mI (1577) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1585) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (1704) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1704) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1757) wifi:<ba-add>idx:0 (ifx:0, 12:32:b6:52:da:5d), tid:0, ssn:4, winSize:64[0m
+[0;32mI (2594) esp_netif_handlers: sta ip: 10.20.159.221, mask: 255.255.255.0, gw: 10.20.159.78[0m
+[0;32mI (2594) robot_face: Got IP: 10.20.159.221[0m
+[0;32mI (2597) robot_face: WiFi connected[0m
+[0;32mI (2601) robot_face: [Heap] free=113783 largest=31744[0m
+[0;32mI (2608) main_task: Returned from app_main()[0m
+[0;31mE (9608) esp-tls: couldn't get hostname for :firestore.googleapis.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (9608) esp-tls: Failed to open new connection[0m
+[0;31mE (9613) transport_base: Failed to open a new connection[0m
+[0;31mE (9619) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (9624) robot_face: [HTTP] err=ESP_ERR_HTTP_CONNECT status=-1 body=0 bytes[0m
+[0;32mI (9632) robot_face: [Poll] no change / failed[0m
+[0;32mI (381) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (387) MSPI Timing: PSRAM timing tuning index: 11[0m
+[0;32mI (392) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (396) esp_psram: Speed: 80MHz[0m
+[0;32mI (455) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (470) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (718) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (726) cpu_start: Pro cpu start user code[0m
+[0;32mI (726) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (727) cpu_start: Application information:[0m
+[0;32mI (729) cpu_start: Project name:     example_qspi_with_ram[0m
+[0;32mI (736) cpu_start: App version:      1[0m
+[0;32mI (740) cpu_start: Compile time:     Jun 15 2026 04:08:41[0m
+[0;32mI (746) cpu_start: ELF file SHA256:  ba2e69c2c...[0m
+[0;32mI (751) cpu_start: ESP-IDF:          v5.2.7[0m
+[0;32mI (756) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (761) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (766) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (771) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (778) heap_init: At 3FCABDE0 len 0003D930 (246 KiB): RAM[0m
+[0;32mI (784) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (790) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (796) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (802) esp_psram: Adding pool of 7104K of PSRAM memory to heap allocator[0m
+[0;32mI (810) spi_flash: detected chip: winbond[0m
+[0;32mI (815) spi_flash: flash io: qio[0m
+[0;33mW (819) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (829) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (836) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (853) main_task: Started on CPU0[0m
+[0;32mI (857) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (866) main_task: Calling app_main()[0m
+[0;32mI (870) example: Initialize I2C bus[0m
+[0;32mI (874) example: Initialize SPI bus[0m
+[0;32mI (878) example: Install panel IO[0m
+[0;32mI (882) example: Install SH8601 panel driver[0m
+[0;32mI (887) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (897) sh8601: LCD panel create success, version: 1.0.0[0m
+[0;33mW (1063) sh8601: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (1173) sh8601: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1173) example: Initialize LVGL library[0m
+[0;32mI (1177) example: Register display driver to LVGL[0m
+[0;32mI (1184) example: Install LVGL tick timer[0m
+[0;32mI (1187) example: Starting LVGL task[0m
+[0;32mI (1378) pp: pp rom version: e7ae62f[0m
+[0;32mI (1378) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1380) wifi:wifi driver task: 3fcdbbfc, prio:23, stack:6656, core=0[0m
+[0;32mI (1386) wifi:wifi firmware version: ff41b26[0m
+[0;32mI (1387) wifi:wifi certification version: v7.0[0m
+[0;32mI (1391) wifi:config NVS flash: enabled[0m
+[0;32mI (1394) wifi:config nano formating: disabled[0m
+[0;32mI (1398) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1403) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1408) wifi:Init management short buffer num: 32[0m
+[0;32mI (1412) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1416) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1420) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1424) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1428) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1433) wifi_init: rx ba win: 6[0m
+[0;32mI (1436) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1440) wifi_init: udp mbox: 6[0m
+[0;32mI (1444) wifi_init: tcp mbox: 6[0m
+[0;32mI (1448) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1452) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1456) wifi_init: tcp mss: 1440[0m
+[0;32mI (1460) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1465) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1470) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (1506) wifi:mode : sta (30:ed:a0:ad:8b:e8)[0m
+[0;32mI (1507) wifi:enable tsf[0m
+[0;32mI (1508) robot_face: Connecting to matt ...[0m
+[0;32mI (1513) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (1513) wifi:state: init -> auth (b0)[0m
+[0;32mI (1536) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1548) wifi:state: assoc -> run (10)[0m
+[0;32mI (1550) wifi:state: run -> init (2c0)[0m
+[0;32mI (1552) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;33mW (1553) robot_face: WiFi disconnected, retrying...[0m
+[0;33mW (3961) robot_face: WiFi disconnected, retrying...[0m
+[0;32mI (3966) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (3966) wifi:state: init -> auth (b0)[0m
+[0;32mI (3976) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3991) wifi:state: assoc -> run (10)[0m
+[0;32mI (4004) wifi:connected with matt, aid = 6, channel 6, BW20, bssid = 12:32:b6:52:da:5d[0m
+[0;32mI (4005) wifi:security: WPA2-PSK, phy: bgn, rssi: -29, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (4010) wifi:pm start, type: 1[0m
+
+[0;32mI (4012) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4020) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (4029) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (4037) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (4063) wifi:<ba-add>idx:0 (ifx:0, 12:32:b6:52:da:5d), tid:0, ssn:4, winSize:64[0m
+[0;32mI (5043) esp_netif_handlers: sta ip: 10.20.159.221, mask: 255.255.255.0, gw: 10.20.159.78[0m
+[0;32mI (5043) robot_face: Got IP: 10.20.159.221[0m
+[0;32mI (5046) robot_face: WiFi connected[0m
+[0;32mI (5050) robot_face: [Heap] free=113783 largest=31744[0m
+[0;32mI (5057) main_task: Returned from app_main()[0m
+[0;31mE (12057) esp-tls: couldn't get hostname for :firestore.googleapis.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (12057) esp-tls: Failed to open new connection[0m
+[0;31mE (12062) transport_base: Failed to open a new connection[0m
+[0;31mE (12068) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (12073) robot_face: [HTTP] err=ESP_ERR_HTTP_CONNECT status=-1 body=0 bytes[0m
+[0;32mI (12081) robot_face: [Poll] no change / failed[0m
+[0;32mI (22086) robot_face: [Heap] free=118255 largest=31744[0m
+[0;32mI (22177) wifi:<ba-add>idx:1 (ifx:0, 12:32:b6:52:da:5d), tid:3, ssn:5, winSize:64[0m
+[0;32mI (22270) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (22968) robot_face: [HTTP] err=ESP_OK status=200 body=3398 bytes[0m
+[0;32mI (22971) robot_face: [Config] eye=1 brow=3 mouth=3 eyeC=B2EBF2 bgC=0D1B2A ts=2147483647[0m
+[0;32mI (23124) robot_face: [Poll] updated[0m
+[0;32mI (33124) robot_face: [Heap] free=116963 largest=31744[0m
+[0;32mI (33767) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (34843) robot_face: [HTTP] err=ESP_OK status=200 body=3398 bytes[0m
+[0;32mI (34846) robot_face: [Config] eye=1 brow=3 mouth=3 eyeC=B2EBF2 bgC=0D1B2A ts=2147483647[0m
+[0;32mI (34848) robot_face: [Poll] no change / failed[0m
+[0;32mI (44853) robot_face: [Heap] free=116751 largest=31744[0m
+[0;32mI (45451) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (46318) robot_face: [HTTP] err=ESP_OK status=200 body=3398 bytes[0m
+[0;32mI (46320) robot_face: [Config] eye=1 brow=3 mouth=3 eyeC=B2EBF2 bgC=0D1B2A ts=2147483647[0m
+[0;32mI (46323) robot_face: [Poll] no change / failed[0m
+[0;32mI (56328) robot_face: [Heap] free=116539 largest=31744[0m
+[0;32mI (56897) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (57576) robot_face: [HTTP] err=ESP_OK status=200 body=3398 bytes[0m
+[0;32mI (57578) robot_face: [Config] eye=1 brow=3 mouth=3 eyeC=B2EBF2 bgC=0D1B2A ts=2147483647[0m
+[0;32mI (57581) robot_face: [Poll] no change / failed[0m
+[0;32mI (67586) robot_face: [Heap] free=116315 largest=31744[0m
+[0;32mI (68173) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (69045) robot_face: [HTTP] err=ESP_OK status=200 body=3398 bytes[0m
+[0;32mI (69048) robot_face: [Config] eye=3 brow=0 mouth=4 eyeC=FF8A65 bgC=0A1A0A ts=2147483647[0m
+[0;32mI (69051) robot_face: [Poll] no change / failed[0m
+[0;32mI (79055) robot_face: [Heap] free=116103 largest=31744[0m
+[0;33mW (818) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (829) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (836) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (853) main_task: Started on CPU0[0m
+[0;32mI (857) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (866) main_task: Calling app_main()[0m
+[0;32mI (870) example: Initialize I2C bus[0m
+[0;32mI (874) example: Initialize SPI bus[0m
+[0;32mI (878) example: Install panel IO[0m
+[0;32mI (882) example: Install SH8601 panel driver[0m
+[0;32mI (887) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (897) sh8601: LCD panel create success, version: 1.0.0[0m
+[0;33mW (1063) sh8601: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (1173) sh8601: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1173) example: Initialize LVGL library[0m
+[0;32mI (1177) example: Register display driver to LVGL[0m
+[0;32mI (1184) example: Install LVGL tick timer[0m
+[0;32mI (1187) example: Starting LVGL task[0m
+[0;32mI (1378) pp: pp rom version: e7ae62f[0m
+[0;32mI (1378) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1380) wifi:wifi driver task: 3fcdbbfc, prio:23, stack:6656, core=0[0m
+[0;32mI (1386) wifi:wifi firmware version: ff41b26[0m
+[0;32mI (1387) wifi:wifi certification version: v7.0[0m
+[0;32mI (1391) wifi:config NVS flash: enabled[0m
+[0;32mI (1394) wifi:config nano formating: disabled[0m
+[0;32mI (1398) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1403) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1408) wifi:Init management short buffer num: 32[0m
+[0;32mI (1412) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1416) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1420) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1424) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1428) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1433) wifi_init: rx ba win: 6[0m
+[0;32mI (1436) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1440) wifi_init: udp mbox: 6[0m
+[0;32mI (1444) wifi_init: tcp mbox: 6[0m
+[0;32mI (1448) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1452) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1456) wifi_init: tcp mss: 1440[0m
+[0;32mI (1460) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1465) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1470) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (1506) wifi:mode : sta (30:ed:a0:ad:8b:e8)[0m
+[0;32mI (1506) wifi:enable tsf[0m
+[0;32mI (1507) robot_face: Connecting to matt ...[0m
+[0;32mI (1513) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (1513) wifi:state: init -> auth (b0)[0m
+[0;32mI (1543) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1562) wifi:state: assoc -> run (10)[0m
+[0;32mI (1586) wifi:connected with matt, aid = 7, channel 6, BW20, bssid = 12:32:b6:52:da:5d[0m
+[0;32mI (1586) wifi:security: WPA2-PSK, phy: bgn, rssi: -47, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (1591) wifi:pm start, type: 1[0m
+
+[0;32mI (1594) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1602) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (1638) wifi:<ba-add>idx:0 (ifx:0, 12:32:b6:52:da:5d), tid:0, ssn:4, winSize:64[0m
+[0;32mI (1652) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1652) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (2611) esp_netif_handlers: sta ip: 10.20.159.221, mask: 255.255.255.0, gw: 10.20.159.78[0m
+[0;32mI (2611) robot_face: Got IP: 10.20.159.221[0m
+[0;32mI (2614) robot_face: WiFi connected[0m
+[0;32mI (2618) robot_face: [Heap] free=113783 largest=31744[0m
+[0;32mI (2625) main_task: Returned from app_main()[0m
+[0;31mE (9625) esp-tls: couldn't get hostname for :firestore.googleapis.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (9625) esp-tls: Failed to open new connection[0m
+[0;31mE (9630) transport_base: Failed to open a new connection[0m
+[0;31mE (9636) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (9641) robot_face: [HTTP] err=ESP_ERR_HTTP_CONNECT status=-1 body=0 bytes[0m
+[0;32mI (9649) robot_face: [Poll] no change / failed[0m
+[0;32mI (19654) robot_face: [Heap] free=118263 largest=31744[0m
+[0;31mE (34660) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (34660) esp-tls: Failed to open new connection[0m
+[0;31mE (34660) transport_base: Failed to open a new connection[0m
+[0;31mE (34665) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (34671) robot_face: [HTTP] err=ESP_ERR_HTTP_CONNECT status=-1 body=0 bytes[0m
+[0;32mI (34678) robot_face: [Poll] no change / failed[0m
+[0;32mI (44683) robot_face: [Heap] free=118111 largest=31744[0m
+[0;32mI (45382) wifi:<ba-add>idx:1 (ifx:0, 12:32:b6:52:da:5d), tid:3, ssn:5, winSize:64[0m
+[0;32mI (45476) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (46410) robot_face: [HTTP] err=ESP_OK status=200 body=3398 bytes[0m
+[0;32mI (46413) robot_face: [Config] eye=3 brow=0 mouth=4 eyeC=FF8A65 bgC=0A1A0A ts=2147483647[0m
+[0;32mI (46568) robot_face: [Poll] updated[0m
+[0;32mI (56569) robot_face: [Heap] free=116975 largest=31744[0m
+[0;32mI (57407) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (58291) robot_face: [HTTP] err=ESP_OK status=200 body=3398 bytes[0m
+[0;32mI (58294) robot_face: [Config] eye=3 brow=0 mouth=4 eyeC=FF8A65 bgC=0A1A0A ts=2147483647[0m
+[0;32mI (58297) robot_face: [Poll] no change / failed[0m
+[0;32mI (68301) robot_face: [Heap] free=116783 largest=31744[0m
+[0;32mI (69491) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (70577) robot_face: [HTTP] err=ESP_OK status=200 body=3398 bytes[0m
+[0;32mI (70580) robot_face: [Config] eye=3 brow=0 mouth=4 eyeC=FF8A65 bgC=0A1A0A ts=2147483647[0m
+[0;32mI (70582) robot_face: [Poll] no change / failed[0m
+[0;32mI (80587) robot_face: [Heap] free=116531 largest=31744[0m
+[0;32mI (81520) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (82254) robot_face: [HTTP] err=ESP_OK status=200 body=3398 bytes[0m
+[0;32mI (82256) robot_face: [Config] eye=1 brow=3 mouth=3 eyeC=B2EBF2 bgC=0D1B2A ts=2147483647[0m
+[0;32mI (82259) robot_face: [Poll] no change / failed[0m
+[0;32mI (92264) robot_face: [Heap] free=116319 largest=31744[0m
+[0;32mI (92836) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (93925) robot_face: [HTTP] err=ESP_OK status=200 body=3398 bytes[0m
+[0;32mI (93927) robot_face: [Config] eye=1 brow=3 mouth=3 eyeC=B2EBF2 bgC=0D1B2A ts=2147483647[0m
+[0;32mI (93930) robot_face: [Poll] no change / failed[0m
+[0;32mI (103935) robot_face: [Heap] free=116107 largest=31744[0m
+[0;32mI (104717) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (105651) robot_face: [HTTP] err=ESP_OK status=200 body=3398 bytes[0m
+[0;32mI (105654) robot_face: [Config] eye=1 brow=3 mouth=3 eyeC=B2EBF2 bgC=0D1B2A ts=2147483647[0m
+[0;32mI (105657) robot_face: [Poll] no change / failed[0m
+[0;32mI (115662) robot_face: [Heap] free=115895 largest=31744[0m
+[0;32mI (116540) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (117379) robot_face: [HTTP] err=ESP_OK status=200 body=3398 bytes[0m
+[0;32mI (117382) robot_face: [Config] eye=1 brow=3 mouth=3 eyeC=B2EBF2 bgC=0D1B2A ts=2147483647[0m
+[0;32mI (117384) robot_face: [Poll] no change / failed[0m
+[0;32mI (127389) robot_face: [Heap] free=115711 largest=31744[0m
+[0;32mI (128215) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (129560) robot_face: [HTTP] err=ESP_OK status=200 body=3398 bytes[0m
+[0;32mI (129563) robot_face: [Config] eye=1 brow=3 mouth=3 eyeC=B2EBF2 bgC=0D1B2A ts=2147483647[0m
+[0;32mI (129566) robot_face: [Poll] no change / failed[0m
+[0;32mI (139570) robot_face: [Heap] free=115499 largest=31744[0m
+[0;32mI (140149) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (140824) robot_face: [HTTP] err=ESP_OK status=200 body=3398 bytes[0m
+[0;32mI (140827) robot_face: [Config] eye=1 brow=3 mouth=3 eyeC=B2EBF2 bgC=0D1B2A ts=2147483647[0m
+[0;32mI (140830) robot_face: [Poll] no change / failed[0m
+[0;32mI (150834) robot_face: [Heap] free=115287 largest=31744[0m
+[0;32mI (151562) esp-x509-crt-bundle: Certificate validated[0m

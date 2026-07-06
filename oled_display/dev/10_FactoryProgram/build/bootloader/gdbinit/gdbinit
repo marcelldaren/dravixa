@@ -1,0 +1,2 @@
+source D:/dev/10_FactoryProgram/build/bootloader/gdbinit/symbols
+source D:/dev/10_FactoryProgram/build/bootloader/gdbinit/connect

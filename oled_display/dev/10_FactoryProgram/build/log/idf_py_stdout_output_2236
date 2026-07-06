@@ -1,0 +1,67 @@
+-- Existing sdkconfig 'D:/dev/10_FactoryProgram/sdkconfig' renamed to 'D:/dev/10_FactoryProgram/sdkconfig.old'.
+-- Found Git: C:/Program Files/Git/cmd/git.exe (found version "2.46.0.windows.1")
+-- Component directory D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_vfs_console does not contain a CMakeLists.txt file. No component will be added
+-- ccache will be used for faster recompilation
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: C:/Users/Matthew/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Users/Matthew/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Users/Matthew/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32s3
+NOTICE: Dependencies lock doesn't exist, solving dependencies.
+NOTICE: Using component placed at D:\dev\10_FactoryProgram\components\lvgl for dependency "lvgl/lvgl", specified in D:\dev\10_FactoryProgram\main\idf_component.yml
+..................NOTICE: Updating lock file at D:\dev\10_FactoryProgram\dependencies.lock
+NOTICE: Processing 5 dependencies:
+NOTICE: [1/5] espressif/cmake_utilities (0.5.3)
+NOTICE: [2/5] espressif/esp_lcd_sh8601 (1.0.0)
+NOTICE: [3/5] espressif/esp_lcd_touch (1.2.1)
+NOTICE: [4/5] espressif/esp_lcd_touch_ft5x06 (1.1.0~1)
+NOTICE: [5/5] idf (5.2.7)
+-- Project sdkconfig file D:/dev/10_FactoryProgram/sdkconfig
+Loading defaults file D:/dev/10_FactoryProgram/sdkconfig.defaults...
+-- Compiler supported targets: xtensa-esp-elf
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Found Python3: C:/Users/Matthew/.espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe (found version "3.11.9") found components: Interpreter
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- USING O3
+-- App "example_qspi_with_ram" version: 1
+-- Adding linker script D:/dev/10_FactoryProgram/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script D:/dev/10_FactoryProgram/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.bt_funcs.ld
+-- Adding linker script D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_50.ld
+-- Adding linker script D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_cca.ld
+-- Adding linker script D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_test.ld
+-- Adding linker script D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- ESP_LCD_SH8601: 1.0.0
+-- Components: adc_bsp app_trace app_update ble_scan_bsp bootloader bootloader_support bt button_bsp cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hal_ieee802154 esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi esp_wifi_bsp espcoredump espressif__cmake_utilities espressif__esp_lcd_sh8601 espressif__esp_lcd_touch espressif__esp_lcd_touch_ft5x06 esptool_py fatfs freertos gpio_bsp hal heap http_parser i2c_bsp idf_test ieee802154 json log lvgl lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table pcf85063 perfmon protobuf-c protocomm pthread qmi8658c sd_card_bsp sdmmc soc spi_flash spiffs tcp_transport touch_element ui_bsp ulp unity usb user_app vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: D:/dev/10_FactoryProgram/components/adc_bsp D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/app_trace D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/app_update D:/dev/10_FactoryProgram/components/ble_scan_bsp D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/bootloader D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/bootloader_support D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/bt D:/dev/10_FactoryProgram/components/button_bsp D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/cmock D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/console D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/cxx D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/driver D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/efuse D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp-tls D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_adc D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_app_format D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_bootloader_format D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_coex D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_common D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_eth D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_event D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_gdbstub D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_hal_ieee802154 D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_hid D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_http_client D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_http_server D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_https_ota D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_https_server D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_hw_support D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_lcd D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_local_ctrl D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_mm D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_netif D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_netif_stack D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_partition D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_phy D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_pm D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_psram D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_ringbuf D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_rom D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_system D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_timer D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esp_wifi D:/dev/10_FactoryProgram/components/esp_wifi_bsp D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/espcoredump D:/dev/10_FactoryProgram/managed_components/espressif__cmake_utilities D:/dev/10_FactoryProgram/managed_components/espressif__esp_lcd_sh8601 D:/dev/10_FactoryProgram/managed_components/espressif__esp_lcd_touch D:/dev/10_FactoryProgram/managed_components/espressif__esp_lcd_touch_ft5x06 D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/esptool_py D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/fatfs D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/freertos D:/dev/10_FactoryProgram/components/gpio_bsp D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/hal D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/heap D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/http_parser D:/dev/10_FactoryProgram/components/i2c_bsp D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/idf_test D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/ieee802154 D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/json D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/log D:/dev/10_FactoryProgram/components/lvgl D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/lwip D:/dev/10_FactoryProgram/main D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/mbedtls D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/mqtt D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/newlib D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/nvs_flash D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/nvs_sec_provider D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/openthread D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/partition_table D:/dev/10_FactoryProgram/components/pcf85063 D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/perfmon D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/protobuf-c D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/protocomm D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/pthread D:/dev/10_FactoryProgram/components/qmi8658c D:/dev/10_FactoryProgram/components/sd_card_bsp D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/sdmmc D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/soc D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/spi_flash D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/spiffs D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/tcp_transport D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/touch_element D:/dev/10_FactoryProgram/components/ui_bsp D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/ulp D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/unity D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/usb D:/dev/10_FactoryProgram/components/user_app D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/vfs D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/wear_levelling D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/wifi_provisioning D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/wpa_supplicant D:/p/smstr 8/toyota/esp/.espressif/v5.2.7/esp-idf/components/xtensa
+-- Configuring done (26.9s)
+-- Generating done (2.5s)
+-- Build files have been written to: D:/dev/10_FactoryProgram/build
