@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "626563395498",
+    "project_id": "toyota-avatar-design",
+    "storage_bucket": "toyota-avatar-design.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626563395498:android:d2405b80ad1d72f3b7c5d3",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIhH_xlZqt8lQaeKI8_J-wAN1uKzE1m18"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
